@@ -11,11 +11,11 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A **rio-cogeo cookbook** — COG creation and validation from Python. Queued in wave-11 (per-node adds). Patterns are planned from the design, not yet from fleet runs. It is intended for Python developers who produce Cloud Optimized GeoTIFFs programmatically. Validate each pattern against your own data, software versions, and operating environment before adopting it.
+A **rio-cogeo cookbook** — COG creation and validation from Python. Patterns are drawn from the ZQM fleet's wave-11 installs (rio-cogeo 7.0.4 on Node-1) and are design-only until fleet-validated. It is intended for Python developers who produce Cloud Optimized GeoTIFFs programmatically. Validate each pattern against your own data, software versions, and operating environment before adopting it.
 
 ## Repository role and status
 
-**Status:** Active, public — seeding. Pattern passes land in follow-up work from fleet-verified setups; the tables below list what is planned, not what is already written.
+**Status:** Active, public. First pattern pass written (design-only, gate 1 target — none runtime-validated on the fleet yet).
 
 **What this repository is:** rio-cogeo patterns — see the table below.
 
@@ -33,28 +33,32 @@ Python developers who produce Cloud Optimized GeoTIFFs programmatically.
 - Python 3.11+
 - A GeoTIFF to convert
 
-## Patterns (planned)
+## Patterns
 
-| # | Example | What it will demonstrate |
-|---|---------|--------------------------|
-| 01 | `01-first-cog` | Creating a COG from a GeoTIFF |
-| 02 | `02-profiles` | Compression and tiling profiles for different imagery |
-| 03 | `03-validation` | Validating COG layout from Python |
-| 04 | `04-cog-pairing` | Serving the result with TiTiler (see titiler-cookbook) |
+| # | Example | What it demonstrates | Status |
+|---|---------|----------------------|--------|
+| 01 | [examples/01-first-cog](examples/01-first-cog) | Creating a COG from a GeoTIFF | Written (design-only) |
+| 02 | [examples/02-profiles](examples/02-profiles) | Compression and tiling profiles for different imagery | Written (design-only) |
+| 03 | [examples/03-validation](examples/03-validation) | Validating COG layout with the rio-cogeo CLI | Written (design-only) |
+| 04 | [examples/04-cog-pairing](examples/04-cog-pairing) | Serving the result with TiTiler (see titiler-cookbook) | Written (design-only) |
 
 ## Repository layout
 
 ```text
 rio-cogeo-cookbook/
-├── examples/          # pattern passes, landing in follow-up work
+├── examples/
+│   ├── 01-first-cog/
+│   ├── 02-profiles/
+│   ├── 03-validation/
+│   └── 04-cog-pairing/
 ├── README.md
 └── LICENSE
 ```
 
 ## Roadmap
 
-- First pattern pass: the first two table rows
-- Second pass: the remaining rows, from fleet-verified setups
+- First pattern pass: all four table rows (this pass, design-only)
+- Next pass: gate-3 fleet validation on Node-1's wave11-venv
 
 ## Contributing
 

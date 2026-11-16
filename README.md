@@ -11,7 +11,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A **rio-cogeo cookbook** — COG creation and validation from Python. Patterns are drawn from the ZQM fleet's wave-11 installs (rio-cogeo 7.0.4 on Node-1) and are design-only until fleet-validated. It is intended for Python developers who produce Cloud Optimized GeoTIFFs programmatically. Validate each pattern against your own data, software versions, and operating environment before adopting it.
+A **rio-cogeo cookbook** — COG creation and validation from Python. Patterns are drawn from the ZQM fleet's wave-11 installs (rio-cogeo 7.0.4 on Node-1) (as of Oct 2026; verify against the current fleet) and are design-only until fleet-validated. It is intended for Python developers who produce Cloud Optimized GeoTIFFs programmatically. Validate each pattern against your own data, software versions, and operating environment before adopting it.
 
 ## Repository role and status
 
